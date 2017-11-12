@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:700');
+
+.App {
+  header {
+    background-color: #E5F3F2;
+    padding: 20px 0px 30px;
+    .title {
+      display: flex;
+      margin: 0px auto;
+      justify-content: center;
+      .react-icon {
+        background-image: url('../Assets/react.png');
+        background-size: contain;
+        height: 50px;
+        width: 50px;
+        min-height: 50px;
+        min-width: 50px;
+        margin-right: 8px;
+      }
+      h1 {
+        margin: 0px;
+        margin-bottom: 20px;
+        font-family: 'Roboto Slab', serif;
+        font-size: 40px;
+        color: #00A79D;
+        span {
+          color: #6D6E71;
+        }
+      }
+    }
+  }
+
+  .card-container {
+    width: 60%;
+    margin: 0px auto;
+  }
+}

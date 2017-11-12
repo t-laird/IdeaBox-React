@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:700');
+
+.Card {
+  display: flex;
+  flex-wrap: wrap;
+  
+  .top-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .title-text {
+      margin: 5px 0px;
+      font-size: 25px;
+      color: #6D6E71;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    .delete {
+      background-image: url('../Assets/delete.svg');
+      cursor: pointer;
+      height: 25px;
+      width: 25px;
+      min-height: 25px;
+      min-width: 25px;
+
+      &:hover {
+        background-image: url('../Assets/delete-hover.svg');
+      }
+    }
+  }
+
+  .body-text {
+    color: #939598;
+    font-family: 'Open Sans';
+    margin: 5px 0px;
+  }
+
+  .quality-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .vote-buttons {
+      display: flex;
+      .upvote {
+        background-image: url('../Assets/upvote.svg');
+        &:hover {
+          background-image: url('../Assets/upvote-hover.svg');
+        }
+      }
+      .downvote {
+        background-image: url('../Assets/downvote.svg');
+        &:hover {
+          background-image: url('../Assets/downvote-hover.svg');
+        }
+      }
+  
+      .upvote,
+      .downvote {
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+      }
+    }
+    h5 {
+      margin: 0px;
+      margin-left: 10px;
+    }
+
+  }
+      .divider {
+        width: 100%;
+        border-top: 1px solid #D1D3D4;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+}

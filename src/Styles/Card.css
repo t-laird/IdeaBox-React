@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:700");
+.Card {
+  display: flex;
+  flex-wrap: wrap; }
+  .Card .top-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .Card .top-line .title-text {
+      margin: 5px 0px;
+      font-size: 25px;
+      color: #6D6E71;
+      font-family: 'Roboto Slab', serif; }
+    .Card .top-line .delete {
+      background-image: url("../Assets/delete.svg");
+      cursor: pointer;
+      height: 25px;
+      width: 25px;
+      min-height: 25px;
+      min-width: 25px; }
+      .Card .top-line .delete:hover {
+        background-image: url("../Assets/delete-hover.svg"); }
+  .Card .body-text {
+    color: #939598;
+    font-family: 'Open Sans';
+    margin: 5px 0px; }
+  .Card .quality-section {
+    display: flex;
+    align-items: center;
+    width: 100%; }
+    .Card .quality-section .vote-buttons {
+      display: flex; }
+      .Card .quality-section .vote-buttons .upvote {
+        background-image: url("../Assets/upvote.svg"); }
+        .Card .quality-section .vote-buttons .upvote:hover {
+          background-image: url("../Assets/upvote-hover.svg"); }
+      .Card .quality-section .vote-buttons .downvote {
+        background-image: url("../Assets/downvote.svg"); }
+        .Card .quality-section .vote-buttons .downvote:hover {
+          background-image: url("../Assets/downvote-hover.svg"); }
+      .Card .quality-section .vote-buttons .upvote,
+      .Card .quality-section .vote-buttons .downvote {
+        height: 25px;
+        width: 25px;
+        cursor: pointer; }
+    .Card .quality-section h5 {
+      margin: 0px;
+      margin-left: 10px; }
+  .Card .divider {
+    width: 100%;
+    border-top: 1px solid #D1D3D4;
+    margin-top: 15px;
+    margin-bottom: 15px; }

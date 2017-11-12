@@ -1,0 +1,24 @@
+.Form {
+  width: 60%;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap; }
+  .Form input,
+  .Form button {
+    width: 100%;
+    font-size: 20px;
+    outline: none; }
+  .Form input {
+    height: 25px;
+    padding-left: 5px;
+    color: grey;
+    margin-bottom: 15px;
+    border: 2px solid #b1b1b1; }
+    .Form input::placeholder {
+      color: #b1b1b1; }
+  .Form button {
+    height: 35px;
+    background-color: #00A79D;
+    color: white;
+    border: none;
+    outline: none; }
