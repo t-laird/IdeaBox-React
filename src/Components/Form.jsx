@@ -33,8 +33,10 @@ class Form extends Component {
   render() {
     return (
       <div className="Form">
-        <input type="text" value={this.state.titleVal} onChange={this.updateTitleVal} placeholder="Title" autoFocus/>
+        <input type="text" value={this.state.titleVal} onChange={this.updateTitleVal} placeholder="Title" maxLength="40" autoFocus/>
+        <span className="charsLeft">{40 - this.state.titleVal.length}</span>
         <input type="text" value={this.state.bodyVal} onChange={this.updateBodyVal} placeholder="Body"/>
+        <span className="charsLeft">{40 - this.state.bodyVal.length}</span>
         <button onClick={this.submitCard}>save</button>      
       </div>
     )

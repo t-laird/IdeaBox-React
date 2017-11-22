@@ -16,6 +16,11 @@
     border: 2px solid #b1b1b1; }
     .Form input::placeholder {
       color: #b1b1b1; }
+  .Form .charsLeft {
+    position: relative;
+    top: -38px;
+    left: 95%;
+    color: lightgrey; }
   .Form button {
     height: 35px;
     background-color: #00A79D;
