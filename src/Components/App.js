@@ -49,6 +49,14 @@ class App extends Component {
       id,
       JSON.stringify(cardRefresh)
     );
+
+    let currentCards = this.state.cards;
+    let cardIndex = currentCards.findIndex( card => card.id === id);
+    currentCards[cardIndex] = cardRefresh;
+
+    this.setState({
+      cards: currentCards
+    });    
   }
 
   deleteIdea(id) {
@@ -62,10 +70,10 @@ class App extends Component {
 
   filterCards(input) {
     let originalCards = Object.keys(localStorage).filter( card => {
-                          return card.includes('reactidea');
-                        }).map( key => {
-                          return JSON.parse(localStorage[key])
-                        });
+      return card.includes('reactidea');
+    }).map( key => {
+      return JSON.parse(localStorage[key]);
+    });
     let filteredCards = originalCards.filter(card => {
       return (
         card.title.toLowerCase().includes(input.toLowerCase()) ||
@@ -77,7 +85,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className="App">
         <header>
