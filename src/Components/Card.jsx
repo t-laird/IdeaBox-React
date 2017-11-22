@@ -17,8 +17,6 @@ function Card(props) {
     }  else {
       newQual = 'genius';
     }
-
-
     props.updateCard(id, newQual, 'quality');
   }
 
@@ -30,9 +28,6 @@ function Card(props) {
     }  else {
       newQual = 'swill';
     }
-
-    console.log(newQual);
-
     props.updateCard(id, newQual, 'quality');    
   }
 
